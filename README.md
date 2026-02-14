@@ -4,25 +4,31 @@ Multi-agent engineering organization with autonomous execution, cost tracking, a
 
 ## Installation
 
-### From GitHub (Recommended)
+### Method 1: Clone to Plugins Directory (Recommended)
 
 ```bash
-# Install via Claude Code
-claude install https://github.com/eaglin/nexus
+# Clone to Claude Code plugins directory
+git clone https://github.com/Garrett-s-Apps/nexus-plugin.git ~/.claude/plugins/nexus
+
+# Restart Claude Code (if running)
+# Plugin will load automatically
 ```
 
-### Local Installation (Development)
+### Method 2: Use with --plugin-dir Flag
 
 ```bash
-# Clone repository
-git clone https://github.com/eaglin/nexus.git
-cd nexus
+# Clone anywhere
+git clone https://github.com/Garrett-s-Apps/nexus-plugin.git ~/nexus-plugin
 
-# Install SDK
-pip install -e packages/nexus-sdk[claude]
+# Use with Claude Code
+claude --plugin-dir ~/nexus-plugin
+```
 
-# Test plugin locally
-claude --plugin-dir /path/to/nexus/.claude-plugin
+### Verify Installation
+
+```bash
+# Check if plugin is loaded
+claude --list-plugins | grep nexus
 ```
 
 ## Quick Start
