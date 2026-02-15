@@ -14,10 +14,7 @@
         "url": "https://github.com/Garrett-s-Apps"
       },
       "repository": "https://github.com/Garrett-s-Apps/nexus-plugin",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/Garrett-s-Apps/nexus-plugin.git"
-      },
+      "source": "git@github.com:Garrett-s-Apps/nexus-plugin.git",
       "license": "MIT"
     }
   ]
