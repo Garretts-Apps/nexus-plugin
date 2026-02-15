@@ -8,6 +8,12 @@
 
 When the user requests a new feature or project, this skill:
 
+0. **First-Time Setup** (if needed)
+   - Runs interactive scaffolding (VM creation, Docker build)
+   - User sees progress and can confirm each step
+   - Only runs once - subsequent uses skip this step
+   - All execution happens in isolated VM+Docker environment
+
 1. **Planning Phase** (VP of Engineering)
    - Analyzes requirements
    - Creates technical design

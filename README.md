@@ -42,14 +42,45 @@ claude --list-plugins | grep nexus
 
 ## Quick Start
 
-1. **Set up API key** (Claude Code will use your Claude key by default)
-   ```bash
-   # Optional: For other providers
-   export OPENAI_API_KEY=sk-...
-   export GOOGLE_API_KEY=...
-   ```
+### First-Time Setup (Automatic)
 
-2. **Use skills** (trigger automatically)
+**On your first NEXUS command**, you'll see an interactive setup:
+
+```
+╔════════════════════════════════════════════════════════════════╗
+║                    NEXUS FIRST-TIME SETUP                      ║
+╚════════════════════════════════════════════════════════════════╝
+
+NEXUS uses a secure, isolated execution environment:
+
+  Your Machine
+    └─ Multipass VM (Ubuntu, SOC 2 hardened)
+        └─ Docker Container (nexus-cli-sandbox)
+            └─ Claude CLI + NEXUS Agents
+
+This setup will:
+  1. Install Multipass (if not present)
+  2. Create secure Ubuntu VM (2 CPU, 4GB RAM, 20GB disk)
+  3. Build Docker sandbox container
+  4. Configure security and isolation
+
+Estimated time: 5-10 minutes
+Required: 8GB RAM, 20GB disk space
+
+Continue with setup? [y/N]:
+```
+
+Just say **yes** and NEXUS handles everything automatically. This only happens once!
+
+**Why VM+Docker?**
+- 🔒 **Isolated**: Code never runs directly on your machine
+- ✅ **SOC 2 Compliant**: Enterprise-grade security
+- 🧹 **Sandboxed**: All execution in contained environment
+- 👁️ **Transparent**: You see all agent interactions
+
+### Using NEXUS
+
+1. **Use skills** (trigger automatically)
    ```
    "Build me a user authentication API"
    → Triggers autonomous-build skill
