@@ -68,13 +68,13 @@ claude --list-plugins | grep nexus
    /nexus-hire senior_engineer  # Add new agent
    ```
 
-4. **Use agents** (via Task tool)
+4. **Autonomous execution**
    ```
-   Use the Task tool with nexus agents:
-   - vp-engineering: Strategic planning
-   - senior-engineer: Implementation
-   - qa-lead: Quality assurance
-   - security-engineer: Security review
+   Skills automatically orchestrate agents:
+   - VP Engineering: Strategic planning
+   - Senior Engineers: Implementation
+   - QA Lead: Quality assurance
+   - Security Engineer: Security review
    ```
 
 ## Features
@@ -139,7 +139,7 @@ Add a new agent to the organization with balanced diversity.
 
 ## Agents
 
-Available via Task tool for specialized work:
+Autonomous agents orchestrated by skills:
 
 - **vp-engineering**: Strategic planning and architecture (Opus)
 - **senior-engineer**: Feature implementation (Sonnet)
