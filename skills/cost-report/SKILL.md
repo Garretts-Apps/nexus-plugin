@@ -6,36 +6,44 @@
 
 **Behavior:**
 
-Reads the cost tracking database and generates executive summary with:
+When user requests cost information, this skill narrates the analysis:
 
-1. **Current Period Stats**
-   - Hourly burn rate
-   - Total spent today
-   - Total spent this week
-   - Total spent this month
+0. **Environment Setup**
+   - 📢 "Connecting to NEXUS cost tracking database..."
+   - 📢 "Loading cost data from isolated VM..."
 
-2. **Budget Status**
-   - Hourly target vs actual
-   - Hourly hard cap status
-   - Monthly target vs actual
-   - Days until monthly budget exhausted (at current rate)
+1. **Data Collection**
+   - 📢 "Retrieving current period statistics..."
+   - 📢 "Calculating hourly burn rate..."
+   - 📢 "Aggregating daily, weekly, and monthly totals..."
 
-3. **Top Consumers**
-   - Most expensive agents
-   - Most expensive projects
-   - Most expensive operations
-   - Model usage breakdown
+2. **Budget Analysis**
+   - 📢 "Comparing actual vs target spending..."
+   - 📢 "Checking hourly hard cap status..."
+   - 📢 "Projecting monthly budget trajectory..."
+   - 📢 "Calculating days until budget exhaustion..."
 
-4. **Cost Trends**
-   - Hour-over-hour trend
-   - Day-over-day trend
-   - Week-over-week trend
-   - Projected monthly total
+3. **Consumer Breakdown**
+   - 📢 "Identifying most expensive agents..."
+   - 📢 "Analyzing project-level spending..."
+   - 📢 "Breaking down costs by operation type..."
+   - 📢 "Summarizing model usage (Opus/Sonnet/Haiku)..."
 
-5. **Optimization Recommendations**
-   - When to use cheaper models
-   - Inefficient operations to optimize
-   - Budget adjustments needed
+4. **Trend Analysis**
+   - 📢 "Computing hour-over-hour trends..."
+   - 📢 "Calculating day-over-day changes..."
+   - 📢 "Analyzing week-over-week patterns..."
+   - 📢 "Forecasting end-of-month total..."
+
+5. **Optimization Insights**
+   - 📢 "Generating cost optimization recommendations..."
+   - 📢 "Identifying opportunities to use cheaper models..."
+   - 📢 "Detecting inefficient operation patterns..."
+   - 📢 "Suggesting budget adjustments if needed..."
+
+6. **Report Generation**
+   - 📢 "Compiling executive summary..."
+   - 📢 "Cost report complete! 💰"
 
 **Example Usage:**
 ```

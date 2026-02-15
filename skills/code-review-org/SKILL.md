@@ -6,37 +6,54 @@
 
 **Behavior:**
 
-When the user requests a code review, this skill spawns multiple reviewers in parallel:
+When the user requests a code review, this skill narrates each step:
 
-1. **Style Reviewer** (Haiku - Fast)
-   - Naming conventions
-   - Formatting consistency
-   - Code organization
-   - Documentation quality
+0. **Environment Setup**
+   - 📢 "Ensuring NEXUS VM is running..."
+   - 📢 "Preparing secure review environment..."
+   - 📢 "Loading code into isolated sandbox..."
 
-2. **Quality Reviewer** (Sonnet - Thorough)
-   - Logic correctness
-   - Error handling
-   - Edge cases
-   - Maintainability
-   - Anti-patterns
+1. **Review Dispatch**
+   - 📢 "Spawning 4 specialized reviewers in parallel..."
+   - 📢 "Style Reviewer (Haiku) - checking conventions..."
+   - 📢 "Quality Reviewer (Sonnet) - analyzing logic..."
+   - 📢 "Security Reviewer (Sonnet) - scanning for vulnerabilities..."
+   - 📢 "Performance Reviewer (Sonnet) - checking efficiency..."
 
-3. **Security Reviewer** (Sonnet - Focused)
-   - Authentication/authorization
-   - Input validation
-   - SQL injection risks
-   - XSS vulnerabilities
-   - Secret exposure
-   - OWASP Top 10
+2. **Style Review** (Haiku - Fast)
+   - 📢 "Checking naming conventions..."
+   - 📢 "Validating formatting consistency..."
+   - 📢 "Analyzing code organization..."
+   - 📢 "Reviewing documentation quality..."
 
-4. **Performance Reviewer** (Sonnet - Analytical)
-   - Algorithmic complexity
-   - Database query efficiency
-   - Memory usage
-   - Caching opportunities
-   - N+1 query problems
+3. **Quality Review** (Sonnet - Thorough)
+   - 📢 "Verifying logic correctness..."
+   - 📢 "Checking error handling..."
+   - 📢 "Testing edge cases..."
+   - 📢 "Assessing maintainability..."
+   - 📢 "Detecting anti-patterns..."
 
-**Parallel Execution:** All reviewers run simultaneously for fast results.
+4. **Security Review** (Sonnet - Focused)
+   - 📢 "Auditing authentication/authorization..."
+   - 📢 "Validating input sanitization..."
+   - 📢 "Scanning for SQL injection risks..."
+   - 📢 "Checking for XSS vulnerabilities..."
+   - 📢 "Detecting exposed secrets..."
+   - 📢 "Reviewing OWASP Top 10 compliance..."
+
+5. **Performance Review** (Sonnet - Analytical)
+   - 📢 "Analyzing algorithmic complexity..."
+   - 📢 "Checking database query efficiency..."
+   - 📢 "Measuring memory usage..."
+   - 📢 "Identifying caching opportunities..."
+   - 📢 "Detecting N+1 query problems..."
+
+6. **Consolidation**
+   - 📢 "All reviewers complete! Consolidating findings..."
+   - 📢 "Generating summary report..."
+   - 📢 "Calculating overall verdict..."
+
+**Parallel Execution:** All reviewers run simultaneously (steps 2-5 concurrent).
 
 **Example Usage:**
 ```

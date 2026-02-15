@@ -6,43 +6,56 @@
 
 **Behavior:**
 
-When the user requests a new feature or project, this skill:
+When the user requests a new feature or project, this skill narrates each step:
 
 0. **First-Time Setup** (if needed)
-   - Runs interactive scaffolding (VM creation, Docker build)
-   - User sees progress and can confirm each step
-   - Only runs once - subsequent uses skip this step
-   - All execution happens in isolated VM+Docker environment
+   - 📢 "Setting up NEXUS secure execution environment..."
+   - 📢 "Installing Multipass VM manager..."
+   - 📢 "Creating Ubuntu VM with SOC 2 Type II hardening..."
+   - 📢 "Building Docker sandbox container..."
+   - 📢 "Configuring security policies and isolation..."
+   - User sees all progress and confirms each step
+   - Only runs once - subsequent uses skip to step 1
 
-1. **Planning Phase** (VP of Engineering)
-   - Analyzes requirements
-   - Creates technical design
-   - Plans file structure
-   - Identifies dependencies
+1. **Environment Check**
+   - 📢 "Checking if NEXUS VM is running..."
+   - 📢 "Starting secure execution environment..." (if needed)
+   - 📢 "All code will execute in isolated VM+Docker sandbox"
 
-2. **Implementation Phase** (Senior Engineers)
-   - Writes production-quality code
-   - Handles error cases
-   - Adds appropriate comments
-   - Follows project conventions
+2. **Planning Phase** (VP of Engineering)
+   - 📢 "VP of Engineering analyzing requirements..."
+   - 📢 "Creating technical architecture design..."
+   - 📢 "Planning file structure and module boundaries..."
+   - 📢 "Identifying dependencies and risks..."
+   - Shows the technical plan to user
 
-3. **Quality Assurance** (QA Lead)
-   - Reviews implementation
-   - Checks for bugs
-   - Validates error handling
-   - Confirms completeness
+3. **Implementation Phase** (Senior Engineers)
+   - 📢 "Senior Engineers implementing feature..."
+   - 📢 "Writing production-quality code..."
+   - 📢 "Handling error cases and edge conditions..."
+   - 📢 "Following project conventions and best practices..."
+   - Shows files being created/modified
 
-4. **Version Control** (if Git detected)
-   - Creates feature branch
-   - Stages files
-   - Commits with descriptive message
-   - Includes cost tracking
+4. **Quality Assurance** (QA Lead)
+   - 📢 "QA Lead reviewing implementation..."
+   - 📢 "Checking for bugs and logic errors..."
+   - 📢 "Validating error handling..."
+   - 📢 "Confirming completeness and quality..."
+   - Shows QA findings and fixes
 
-5. **Reporting**
-   - Summarizes what was built
-   - Lists files created/modified
-   - Reports total cost
-   - Provides next steps
+5. **Version Control** (if Git detected)
+   - 📢 "Creating feature branch..."
+   - 📢 "Staging modified files..."
+   - 📢 "Committing with descriptive message..."
+   - 📢 "Tracking cost and metadata..."
+   - Shows branch name and commit hash
+
+6. **Reporting**
+   - 📢 "Build complete! Summary:"
+   - Lists all files created/modified
+   - Shows total cost ($X.XX)
+   - Provides next steps for testing
+   - Shows how to access the feature
 
 **Cost Awareness:** Uses budget-appropriate models (Opus for planning, Sonnet for implementation, Haiku for QA).
 
