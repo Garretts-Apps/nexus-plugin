@@ -290,6 +290,5 @@ MIT - See LICENSE file
 
 ## Support
 
-- Issues: https://github.com/eaglin/nexus/issues
-- Docs: https://nexus-sdk.dev/docs
-- Email: support@nexus-sdk.dev
+- Issues: https://github.com/Garrett-s-Apps/nexus-plugin/issues
+- Repository: https://github.com/Garrett-s-Apps/nexus-plugin
