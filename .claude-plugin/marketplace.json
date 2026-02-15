@@ -1,37 +1,19 @@
 {
+  "name": "NEXUS Marketplace",
   "owner": {
     "name": "Garrett Eaglin",
     "url": "https://github.com/Garrett-s-Apps"
   },
   "plugins": [
     {
-      "id": "nexus",
-      "name": "NEXUS",
-      "displayName": "NEXUS - Multi-Agent Engineering Org",
+      "name": "NEXUS - Multi-Agent Engineering Org",
       "description": "Autonomous engineering organization with 26+ AI agents. Build features, review code, and track costs automatically.",
       "version": "0.1.0",
-      "author": {
-        "name": "Garrett Eaglin",
-        "url": "https://github.com/Garrett-s-Apps"
-      },
-      "repository": {
-        "type": "git",
-        "url": "https://github.com/Garrett-s-Apps/nexus-plugin"
-      },
+      "author": "Garrett Eaglin",
+      "repository": "https://github.com/Garrett-s-Apps/nexus-plugin",
+      "source": "https://github.com/Garrett-s-Apps/nexus-plugin.git",
       "license": "MIT",
-      "homepage": "https://github.com/Garrett-s-Apps/nexus-plugin",
-      "keywords": ["agents", "automation", "autonomous", "engineering", "code-review", "cost-tracking", "multi-agent", "ai", "productivity"],
-      "categories": ["productivity", "development", "automation", "ai-agents"],
-      "features": [
-        "Autonomous feature development (plan → implement → test → commit)",
-        "Multi-perspective code review (style, quality, security, performance)",
-        "Real-time cost tracking and budget enforcement",
-        "26+ diverse AI agents with balanced representation"
-      ],
-      "installation": {
-        "method": "git",
-        "url": "https://github.com/Garrett-s-Apps/nexus-plugin.git"
-      }
+      "homepage": "https://github.com/Garrett-s-Apps/nexus-plugin"
     }
   ]
 }
