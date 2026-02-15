@@ -4,17 +4,26 @@ Multi-agent engineering organization with autonomous execution, cost tracking, a
 
 ## Installation
 
-### Method 1: Clone to Plugins Directory (Recommended)
+### Method 1: Via Claude Code Marketplace (Recommended)
+
+1. In Claude Code, type `/plugin`
+2. Add custom plugin source:
+   ```
+   https://github.com/Garrett-s-Apps/nexus-plugin
+   ```
+3. Install NEXUS from the marketplace
+4. Restart Claude Code
+
+### Method 2: Manual Clone
 
 ```bash
 # Clone to Claude Code plugins directory
 git clone https://github.com/Garrett-s-Apps/nexus-plugin.git ~/.claude/plugins/nexus
 
 # Restart Claude Code (if running)
-# Plugin will load automatically
 ```
 
-### Method 2: Use with --plugin-dir Flag
+### Method 3: Use with --plugin-dir Flag
 
 ```bash
 # Clone anywhere
