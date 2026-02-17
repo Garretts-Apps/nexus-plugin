@@ -1,9 +1,82 @@
 {
   "name": "nexus",
   "description": "Enterprise multi-agent orchestration system. Autonomous software engineering org with executive, engineering, and quality layers.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Garrett Eaglin",
     "url": "https://github.com/Garrett-s-Apps"
+  },
+  "skills": {
+    "autonomous-build": {
+      "description": "Autonomous end-to-end feature implementation with multi-agent orchestration",
+      "triggers": ["build me", "create a", "make a", "implement", "ship"],
+      "globs": [],
+      "alwaysApply": false,
+      "model": "opus"
+    },
+    "code-review-org": {
+      "description": "Multi-perspective code review using 4 parallel specialized reviewers",
+      "triggers": ["review this code", "code review", "check my code", "review PR"],
+      "globs": [],
+      "alwaysApply": false,
+      "model": "sonnet"
+    },
+    "cost-report": {
+      "description": "Comprehensive cost analysis, budget tracking, and optimization insights",
+      "triggers": ["cost report", "show costs", "budget status", "spending", "burn rate"],
+      "globs": [],
+      "alwaysApply": false,
+      "model": "haiku"
+    },
+    "debug-investigate": {
+      "description": "Deep debugging with semantic search over past errors, resolutions, and task outcomes",
+      "triggers": ["debug", "investigate", "why is this failing", "root cause", "trace error", "what went wrong"],
+      "globs": [],
+      "alwaysApply": false,
+      "model": "sonnet"
+    },
+    "semantic-search": {
+      "description": "Search past knowledge — errors, conversations, code changes, task outcomes — using semantic similarity",
+      "triggers": ["search knowledge", "find similar", "have we done this before", "past errors", "what happened with"],
+      "globs": [],
+      "alwaysApply": false,
+      "model": "haiku"
+    },
+    "context-rules": {
+      "description": "Auto-attach project rules and agent context based on file patterns and @mentions",
+      "triggers": [],
+      "globs": ["**/*.py", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+      "alwaysApply": true,
+      "model": "haiku"
+    }
+  },
+  "commands": {
+    "nexus-status": {
+      "description": "Show current NEXUS organization status, active agents, and system health"
+    },
+    "nexus-cost": {
+      "description": "Quick cost summary for current session"
+    },
+    "nexus-hire": {
+      "description": "Add a specialist agent to the current session team"
+    },
+    "nexus-debug": {
+      "description": "Launch semantic debug investigation on a specific error or failure"
+    },
+    "nexus-search": {
+      "description": "Search NEXUS knowledge base for past work, errors, and resolutions"
+    }
+  },
+  "agents": [
+    "agents/vp-engineering.md",
+    "agents/senior-engineer.md",
+    "agents/qa-lead.md",
+    "agents/security-engineer.md",
+    "agents/debug-investigator.md"
+  ],
+  "rules": {
+    "contextWalk": true,
+    "mdFiles": ["CLAUDE.md", "AGENTS.md", "NEXUS.md"],
+    "customRulesDir": "rules/"
   }
 }

@@ -1,3 +1,15 @@
+---
+description: Multi-perspective code review using 4 parallel specialized reviewers
+triggers:
+  - review this code
+  - code review
+  - check my code
+  - review PR
+globs: []
+alwaysApply: false
+model: sonnet
+---
+
 # Code Review Organization Skill
 
 **Triggers:** "review this code", "code review", "check my code", "review PR"
