@@ -1,3 +1,16 @@
+---
+description: Comprehensive cost analysis, budget tracking, and optimization insights
+triggers:
+  - cost report
+  - show costs
+  - budget status
+  - spending
+  - burn rate
+globs: []
+alwaysApply: false
+model: haiku
+---
+
 # Cost Report Skill
 
 **Triggers:** "cost report", "show costs", "budget status", "spending", "burn rate"

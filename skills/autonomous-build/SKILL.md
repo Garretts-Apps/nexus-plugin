@@ -1,3 +1,16 @@
+---
+description: Autonomous end-to-end feature implementation with multi-agent orchestration
+triggers:
+  - build me
+  - create a
+  - make a
+  - implement
+  - ship
+globs: []
+alwaysApply: false
+model: opus
+---
+
 # Autonomous Build Skill
 
 **Triggers:** "build me", "create a", "make a", "implement", "ship"
