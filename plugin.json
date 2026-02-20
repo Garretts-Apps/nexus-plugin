@@ -1,7 +1,7 @@
 {
   "name": "nexus",
   "description": "Enterprise multi-agent orchestration system. Autonomous software engineering org with executive, engineering, and quality layers.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Garrett Eaglin",
     "url": "https://github.com/Garrett-s-Apps"
@@ -9,35 +9,65 @@
   "skills": {
     "autonomous-build": {
       "description": "Autonomous end-to-end feature implementation with multi-agent orchestration",
-      "triggers": ["build me", "create a", "make a", "implement", "ship"],
+      "triggers": [
+        "build me",
+        "create a",
+        "make a",
+        "implement",
+        "ship"
+      ],
       "globs": [],
       "alwaysApply": false,
       "model": "opus"
     },
     "code-review-org": {
       "description": "Multi-perspective code review using 4 parallel specialized reviewers",
-      "triggers": ["review this code", "code review", "check my code", "review PR"],
+      "triggers": [
+        "review this code",
+        "code review",
+        "check my code",
+        "review PR"
+      ],
       "globs": [],
       "alwaysApply": false,
       "model": "sonnet"
     },
     "cost-report": {
       "description": "Comprehensive cost analysis, budget tracking, and optimization insights",
-      "triggers": ["cost report", "show costs", "budget status", "spending", "burn rate"],
+      "triggers": [
+        "cost report",
+        "show costs",
+        "budget status",
+        "spending",
+        "burn rate"
+      ],
       "globs": [],
       "alwaysApply": false,
       "model": "haiku"
     },
     "debug-investigate": {
       "description": "Deep debugging with semantic search over past errors, resolutions, and task outcomes",
-      "triggers": ["debug", "investigate", "why is this failing", "root cause", "trace error", "what went wrong"],
+      "triggers": [
+        "debug",
+        "investigate",
+        "why is this failing",
+        "root cause",
+        "trace error",
+        "what went wrong"
+      ],
       "globs": [],
       "alwaysApply": false,
       "model": "sonnet"
     },
     "semantic-search": {
-      "description": "Search past knowledge — errors, conversations, code changes, task outcomes — using semantic similarity",
-      "triggers": ["search knowledge", "find similar", "have we done this before", "past errors", "what happened with"],
+      "description": "Search past knowledge \u2014 errors, conversations, code changes, task outcomes \u2014 using semantic similarity",
+      "triggers": [
+        "search knowledge",
+        "find similar",
+        "have we done this before",
+        "past errors",
+        "what happened with"
+      ],
       "globs": [],
       "alwaysApply": false,
       "model": "haiku"
@@ -45,7 +75,13 @@
     "context-rules": {
       "description": "Auto-attach project rules and agent context based on file patterns and @mentions",
       "triggers": [],
-      "globs": ["**/*.py", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+      "globs": [
+        "**/*.py",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+      ],
       "alwaysApply": true,
       "model": "haiku"
     }
@@ -65,6 +101,9 @@
     },
     "nexus-search": {
       "description": "Search NEXUS knowledge base for past work, errors, and resolutions"
+    },
+    "nexus-99": {
+      "description": "AI pair-programming session backed by the full NEXUS 27-agent engine \u2014 describe what to build or fix, iterate in REPL"
     }
   },
   "agents": [
@@ -76,7 +115,11 @@
   ],
   "rules": {
     "contextWalk": true,
-    "mdFiles": ["CLAUDE.md", "AGENTS.md", "NEXUS.md"],
+    "mdFiles": [
+      "CLAUDE.md",
+      "AGENTS.md",
+      "NEXUS.md"
+    ],
     "customRulesDir": "rules/"
   }
 }
