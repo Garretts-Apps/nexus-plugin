@@ -1,0 +1,9 @@
+{
+  "contextWalk": true,
+  "mdFiles": [
+    "CLAUDE.md",
+    "AGENTS.md",
+    "NEXUS.md"
+  ],
+  "customRulesDir": "rules/"
+}

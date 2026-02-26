@@ -1,0 +1,14 @@
+{
+  "contextWalk": true,
+  "mdFiles": [
+    "CLAUDE.md",
+    "AGENTS.md",
+    "NEXUS.md"
+  ],
+  "customRulesDir": "rules/",
+  "_comments": {
+    "contextWalk": "Whether to automatically walk and load context from specified markdown files",
+    "mdFiles": "Array of markdown files to walk for project context (relative paths from repo root)",
+    "customRulesDir": "Directory containing custom automation rules for this project (relative path from repo root)"
+  }
+}
